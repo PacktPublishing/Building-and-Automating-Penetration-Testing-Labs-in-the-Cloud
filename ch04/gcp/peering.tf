@@ -1,4 +1,4 @@
-locals = {
+locals {
   net_01 = google_compute_network.vpc_01.self_link
   net_02 = google_compute_network.vpc_02.self_link
 }
