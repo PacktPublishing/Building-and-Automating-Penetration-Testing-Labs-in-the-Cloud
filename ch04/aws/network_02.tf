@@ -46,7 +46,7 @@ resource "aws_route_table_association" "subnect_assoc_for_vpc_02" {
 
 resource "aws_security_group" "sg_02" {
   name        = "sample-sg-vpc_02"
-  description = "Security Group of Test Instance in VPC 02"
+  description = "SG of Test Instance in VPC 02"
   vpc_id      = aws_vpc.vpc_02.id
 
   egress {
