@@ -10,6 +10,12 @@ resource "aws_vpc_peering_connection" "peering_connection" {
   requester {
     allow_remote_vpc_dns_resolution = true
   }
+  
+  timeouts {
+    create = "10m"
+    update = "10m"
+    delete = "10m"
+  }
 }
 
 locals {
