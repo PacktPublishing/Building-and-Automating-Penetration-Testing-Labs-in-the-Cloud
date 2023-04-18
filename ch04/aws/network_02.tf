@@ -69,3 +69,11 @@ resource "aws_instance" "vm_02" {
   subnet_id                   = aws_subnet.public_subnet_02.id
   vpc_security_group_ids      = [aws_security_group.sg_02.id]
 }
+
+output "vm_02_private_ip" {
+  value = aws_instance.vm_02.private_ip
+}
+
+output "vm_02_public_ip" {
+  value = aws_instance.vm_02.public_ip
+}
