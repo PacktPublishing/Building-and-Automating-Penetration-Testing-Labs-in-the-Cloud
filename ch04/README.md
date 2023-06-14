@@ -1,3 +1,50 @@
+## Preparing the necessary components and prerequisites
+
+```
+gcloud config get-value project
+
+gcloud config set project secure-network-environments
+
+
+cd ~ 
+mkdir kali_keys && cd kali_keys
+
+
+ssh-keygen -t rsa -C kali -f ./kali-ssh
+
+
+cat kali-ssh.pub
+```
+
+## Setting up the target VM Instance
+
+```
+wget -O target_boot_script.tpl \
+https://raw.githubusercontent.com/PacktPublishing/Building-Penetration-Testing-Labs-in-the-Cloud/main/ch04/pentest_lab/target_vm/target_boot_script.tpl
+
+cat target_boot_script.tpl
+
+
+wget -O wait_for_boot.tpl \ 
+https://raw.githubusercontent.com/PacktPublishing/Building-Penetration-Testing-Labs-in-the-Cloud/main/ch04/pentest_lab/target_vm/wait_for_boot.tpl
+
+cat wait_for_boot.tpl
+```
+
+```
+gsutil cp kl_image.tar.gz \ 
+gs://$BUCKET_NAME/kl_image.tar.gz
+
+
+IMAGE_NAME=kali-linux-2023-000 gcloud compute images create $IMAGE_NAME \
+    --source-uri gs://$BUCKET_NAME/kl_image.tar.gz \
+    --family kali-linux
+    
+gcloud compute images list --no-standard-images
+```
+
+## Manually setting up the attacker VM instance
+
 ```
 NEW_USER="kali"
 if ! id -u $NEW_USER > /dev/null 2>&1; then
@@ -58,4 +105,7 @@ EDITOR=vim crontab -e -u kali
 
 @reboot /usr/bin/vncserver
 @reboot /usr/share/novnc/utils/novnc_proxy --listen 0.0.0.0:8081 --vnc localhost:5901 >/dev/null 2>&1 &
+
+
+ssh -L 8081:localhost:8081 -N -i <INSERT KEY NAME> kali@<ATTACKER VM IP>
 ```
