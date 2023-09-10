@@ -8,3 +8,15 @@ This chapter focuses on how to build and automate the preparation of an isolated
 <br />
 <br />
 <br />
+<br />
+
+## Links and Files
+
+- [https://github.com/PacktPublishing/Building-and-Automating-Penetration-Testing-Labs-in-the-Cloud/raw/main/ch06/pentest_lab.zip](https://github.com/PacktPublishing/Building-and-Automating-Penetration-Testing-Labs-in-the-Cloud/raw/main/ch06/pentest_lab.zip)
+
+
+## Troubleshooting tips specific to the chapter
+
+### Other troubleshooting tips
+
+You can find other troubleshooting tips in the [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) file.
