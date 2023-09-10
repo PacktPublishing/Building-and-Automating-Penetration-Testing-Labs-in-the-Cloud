@@ -38,6 +38,8 @@ You can also find a copy of these files in this repository (inside the `ch05` di
 
 When you encounter issues using **Cloud Shell**, feel free to restart it using the **Restart Cloud Shell** button.
 
+<br />
+
 ### Azure Key Vault
 
 In the `target_vm/main.tf file`, make sure you update the Key Vault name value from `rg-01-key-vault` to any unused vault name as you’ll encounter the following error (since vault names are globally unique) once you run the terraform apply command in a later step: **VaultAlreadyExists — The vault name rg-01-key-vault is already in use. Vault names are globally unique so it is possible that the name is already taken**. Feel free to add random characters to the Key Vault name value to help ensure that your vault name is globally unique. A good example would be `rg-01-key-vault-a1b2c3d4`. Of course, try something else as other readers of this book may use the same vault name! Finally, we have to update the key vault name specified in the `target_vm/boot-script.sh` file as well. You should find the following line at the end of the script: 
