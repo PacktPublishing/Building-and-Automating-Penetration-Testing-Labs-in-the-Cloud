@@ -6,6 +6,8 @@
 This chapter shows you how to isolate and protect vulnerable lab resources from unauthorized external attacks using a properly configured network environment. Inside this secure network environment, we will set up a target VM instance that hosts an intentionally vulnerable web application called the OWASP Juice Shop. In addition to this, we will launch an attacker VM instance and configure it with browser-based access to its desktop environment.
 
 <br />
+<br />
+<br />
 
 ## Links and Files
 

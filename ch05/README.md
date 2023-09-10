@@ -6,6 +6,8 @@
 This chapter presents how to set up and automate an isolated penetration testing lab environment on Azure. In this chapter, we will build a lab where we can practice container breakout techniques to gain unauthorized access to the host system. In addition to this, we will look at how managed identities in Azure can be abused to gain unauthorized access to other cloud resources.
 
 <br />
+<br />
+<br />
 
 ## Links and Files
 

@@ -6,6 +6,8 @@
 This chapter allows you to get your feet wet by setting up and configuring your first vulnerable lab environment in the cloud.
 
 <br />
+<br />
+<br />
 
 ## Links and Files
 

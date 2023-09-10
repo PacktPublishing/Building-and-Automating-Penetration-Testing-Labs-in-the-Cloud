@@ -6,6 +6,8 @@
 This chapter details how you can use IaC solutions to build your penetration testing lab environments automatically.
 
 <br />
+<br />
+<br />
 
 ## Links and Files
 
