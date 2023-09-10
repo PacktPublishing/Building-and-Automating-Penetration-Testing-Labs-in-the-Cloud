@@ -17,7 +17,7 @@ You can also find a copy of these files in this repository (inside the `ch05` di
 
 <br />
 
-## Versions of the tools used 
+## Versions of the tools, services, and frameworks used 
 
 - **Terraform** - `v1.3.2`
 - **Azure CLI** - `2.52.0`
