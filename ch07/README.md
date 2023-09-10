@@ -32,7 +32,7 @@ If you encounter a **no space left on device** error while running Terraform, fe
 
 Deleting the `vulnerable_s3_lab` resources (and directory) from *Chapter 3* is easy. After running `terraform destroy -auto-approve`, you can use the `rm -rf ~/vulnerable_s3_lab` command to delete the directory along with all the files inside it.
 
-Deleting the `backend` resources (and directory) will require a few additional steps to complete. Feel free to follow the steps discussed in the [Additional cleanup steps section of the CH 03 README.md file](../ch03/README.md).
+Deleting the `backend` resources (and directory) will require a few additional steps to complete. Feel free to follow the steps discussed in the [Additional cleanup steps section of the CH 03 README.md file](../ch03/README.md#additional-cleanup-steps).
 
 ### AWS Cloud9
 
