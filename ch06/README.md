@@ -8,7 +8,6 @@ This chapter focuses on how to build and automate the preparation of an isolated
 <br />
 <br />
 <br />
-<br />
 
 ## Links and Files
 
