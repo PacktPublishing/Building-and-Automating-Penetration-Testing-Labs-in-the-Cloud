@@ -19,6 +19,9 @@ This chapter focuses on how to build and automate the preparation of an isolated
 
 - **Terraform** - `v1.3.9`
 - **AWS CLI** - `2.13.14`
+- **Kali Linux** - `Kali GNU/Linux Rolling | 2023.1`
+- **MSF** - `6.3.31-dev`
+- **Nmap** - `7.94`
 
 <br />
 
