@@ -26,14 +26,6 @@ This chapter demonstrates how to set up a vulnerable lab environment for IAM pri
 
 ## Troubleshooting tips specific to the chapter
 
-### No space left on device error
-
-If you encounter a **no space left on device** error while running Terraform, feel free to run `du -h --max-depth=1 ~` to see which directory inside your CloudShell environment is taking up a bit of space. Once you have identified the directory, feel free to perform the necessary cleanup steps before proceeding to the next set of steps in this chapter. Make sure that you have a backup of the files and directories you are planning to delete before the actual deletion steps.
-
-Deleting the `vulnerable_s3_lab` resources (and directory) from *Chapter 3* is easy. After running `terraform destroy -auto-approve`, you can use the `rm -rf ~/vulnerable_s3_lab` command to delete the directory along with all the files inside it.
-
-Deleting the `backend` resources (and directory) will require a few additional steps to complete. Feel free to follow the steps discussed in the [Additional cleanup steps section of the CH 03 README.md file](../ch03/README.md#additional-cleanup-steps).
-
 ### AWS Cloud9
 
 In some cases, the Cloud9 instance fails to launch due to configuration issues in the VPC network settings. If you see an error similar to **Unable to access your environment... failed to create...**, you may need to use a different availability zone and/or use the default VPC when launching the Cloud9 instance. Alternatively, you may create a new VPC with public subnet(s) only to get things working quickly. You may use the VPC wizard and choose the VPC with a **Single Public Subnet** option. Once this new VPC has been created, use it along with the public subnet when configuring and creating a new Cloud9 instance. If none of this works, use a different region with an existing default VPC and try different subnets.

@@ -25,6 +25,22 @@ This chapter focuses on how to build and automate the preparation of an isolated
 
 ## Troubleshooting tips specific to the chapter
 
+### No space left on device error
+
+If you encounter a **no space left on device** error while running Terraform, feel free to run the following command to see which directory inside your CloudShell environment is taking up a bit of space:
+
+```
+du -h --max-depth=1 ~
+```
+
+Once you have identified the directory, feel free to perform the necessary cleanup steps before proceeding to the next set of steps in this chapter. Make sure that you have a backup of the files and directories you are planning to delete before the actual deletion steps.
+
+Deleting the `vulnerable_s3_lab` resources (and directory) from *Chapter 3* is easy. After running `terraform destroy -auto-approve`, you can use the `rm -rf ~/vulnerable_s3_lab` command to delete the directory along with all the files inside it.
+
+Deleting the `backend` resources (and directory) will require a few additional steps to complete. Feel free to follow the steps discussed in the [Additional cleanup steps section for CH03](../ch03/README.md#additional-cleanup-steps).
+
+<br />
+
 ### Other troubleshooting tips
 
 You can find other troubleshooting tips in the [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) file.
