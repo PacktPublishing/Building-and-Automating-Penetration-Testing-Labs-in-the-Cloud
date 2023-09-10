@@ -9,6 +9,8 @@ This chapter presents how to set up and automate an isolated penetration testing
 
 ## Links and Files
 
+- [https://ipinfo.io/ip](https://ipinfo.io/ip)
+- [https://ifconfig.io/](https://ifconfig.io/)
 - [https://bit.ly/create-ssh-user](https://gist.githubusercontent.com/joshualat/bec319f607001e1ffd69d41d031a5526/raw/030e7efc13bddfb64fb50935fe0487054589dcdc/create_user.sh)
 - [https://bit.ly/kali-desktop-setup](https://gist.githubusercontent.com/joshualat/e01be82543c238d7f0a13f4c33f22802/raw/8b6af622f340cdce14f13260a4ca16678f1dbb50/kali_setup.sh)
 - [https://bit.ly/setup-cron](https://gist.githubusercontent.com/joshualat/e01be82543c238d7f0a13f4c33f22802/raw/8b6af622f340cdce14f13260a4ca16678f1dbb50/setup_cron_job.sh)
