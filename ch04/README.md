@@ -11,8 +11,13 @@ This chapter shows you how to isolate and protect vulnerable lab resources from 
 
 - [target_boot_script.tpl](https://raw.githubusercontent.com/PacktPublishing/Building-Penetration-Testing-Labs-in-the-Cloud/main/ch04/pentest_lab/target_vm/target_boot_script.tpl)
 - [wait_for_boot.tpl](https://raw.githubusercontent.com/PacktPublishing/Building-Penetration-Testing-Labs-in-the-Cloud/main/ch04/pentest_lab/target_vm/wait_for_boot.tpl)
-- [Kali Linux Generic Cloud Image | kl_image.tar.xz](https://kali.download/cloud-images/kali-2023.1/kali-linux-2023.1-cloud-genericcloud-amd64.tar.xz)
+- [https://kali.download/cloud-images/kali-2023.1/kali-linux-2023.1-cloud-genericcloud-amd64.tar.xz](https://kali.download/cloud-images/kali-2023.1/kali-linux-2023.1-cloud-genericcloud-amd64.tar.xz)
 - [https://kali.download/cloud-images/kali-2023.1/](https://kali.download/cloud-images/kali-2023.1/)
+- [https://www.youtube.com/watch?v=NeRYUoR4u0s](https://www.youtube.com/watch?v=NeRYUoR4u0s)
+- [https://ipinfo.io/ip](https://ipinfo.io/ip)
+- [https://ifconfig.io/](https://ifconfig.io/)
+- [https://bit.ly/kali-desktop-setup](https://gist.githubusercontent.com/joshualat/e01be82543c238d7f0a13f4c33f22802/raw/8b6af622f340cdce14f13260a4ca16678f1dbb50/kali_setup.sh)
+- [https://gitlab.com/kalilinux/recipes/kali-scripts/-/raw/main/xfce4.sh](https://gitlab.com/kalilinux/recipes/kali-scripts/-/raw/main/xfce4.sh)
 
 <br />
 
