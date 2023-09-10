@@ -20,9 +20,65 @@ This chapter demonstrates how to set up a vulnerable lab environment for IAM pri
 ## Versions of the tools, services, and frameworks used 
 
 - **Terraform** - `v1.5.5`
-- **AWS CLI** - `2.13.14`
+- **AWS CLI** - `2.13.12`
 
 <br />
+
+## Code Snippets
+
+#### Amazon QLDB — PartiQL editor
+
+```
+INSERT INTO books `{"ID":"ABCD", "Title":"Machine Learning with Amazon SageMaker Cookbook", "Notes":"Machine Learning"}`;
+
+INSERT INTO books `{"ID":"EFGH", "Title":"Machine Learning Engineering on AWS", "Notes":"Machine Learning Engineering"}`;
+
+INSERT INTO books `{"ID":"IJKL", "Title":"Building and Automating Penetration Testing Labs in the Cloud", "Notes":"Security"}`;
+
+SELECT * FROM books;
+
+
+UPDATE books AS b SET b.Flag='Flag # 1!' WHERE b.ID='IJKL';
+
+SELECT * FROM books;
+
+
+DELETE FROM books;
+
+SELECT * FROM books;
+```
+
+#### lambda-role trust policy
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "lambda.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        },
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "sagemaker.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
+```
+
+#### Retrieve credentials from Instance Metadata Service Version 2 (IMDSv2)
+
+```
+TOKEN=$(curl -X PUT -H "X-aws-ec2-metadata-token-ttl-seconds:300" http://169.254.169.254/latest/api/token)
+
+curl -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/identity-credentials/ec2/security-credentials/ec2-instance
+```
 
 ## Troubleshooting tips specific to the chapter
 
