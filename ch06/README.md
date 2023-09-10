@@ -13,6 +13,15 @@ This chapter focuses on how to build and automate the preparation of an isolated
 
 - [https://github.com/PacktPublishing/Building-and-Automating-Penetration-Testing-Labs-in-the-Cloud/raw/main/ch06/pentest_lab.zip](https://github.com/PacktPublishing/Building-and-Automating-Penetration-Testing-Labs-in-the-Cloud/raw/main/ch06/pentest_lab.zip)
 
+<br />
+
+## Versions of the tools, services, and frameworks used 
+
+- **Terraform** - `v1.3.9`
+- **AWS CLI** - `2.13.14`
+
+<br />
+
 
 ## Troubleshooting tips specific to the chapter
 

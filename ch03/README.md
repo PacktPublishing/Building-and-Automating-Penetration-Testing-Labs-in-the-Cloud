@@ -29,3 +29,32 @@ This chapter details how you can use IaC solutions to build your penetration tes
 ## Troubleshooting tips specific to the chapter
 
 You can find troubleshooting tips in the [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) file.
+
+<br />
+
+## Additional cleanup steps
+
+#### Deleting the S3 bucket used for the Terraform backend
+
+1.  In the **AWS CloudShell** terminal, use Vim to open the `backend/main.tf` file and update `prevent_destroy` from `true` to `false`:
+
+```
+resource "aws_s3_bucket" "remote_state" {
+  bucket = "<INSERT S3 BACKEND BUCKET NAME>"
+  lifecycle {
+    prevent_destroy = false
+  }
+}
+```
+
+2. In the **AWS CloudShell** terminal, run `terraform apply -auto-approve`
+
+3. Using the AWS Management Console, locate the S3 bucket for deletion
+
+4. Empty the S3 bucket using the **Empty** button
+
+5. Delete the S3 bucket using the **Delete** button
+
+6. In the **AWS CloudShell** terminal, run `terraform destroy -auto-approve`
+
+7. You may delete the `backend` directory using the `rm -rf` command.
