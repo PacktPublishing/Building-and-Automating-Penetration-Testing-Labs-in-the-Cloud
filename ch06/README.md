@@ -41,6 +41,12 @@ Deleting the `backend` resources (and directory) will require a few additional s
 
 <br />
 
+### terraform: command not found
+
+If Terraform is not yet installed in your AWS CloudShell environment (in case you skipped *Chapter 3*), quickly work on the step-by-step hands-on guide provided in the *Setting up Terraform in AWS CloudShell* section of *Chapter 3*
+
+<br />
+
 ### Other troubleshooting tips
 
 You can find other troubleshooting tips in the [TROUBLESHOOTING.md](../TROUBLESHOOTING.md) file.
