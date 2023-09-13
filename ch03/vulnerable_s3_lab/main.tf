@@ -7,6 +7,25 @@ terraform {
   }
 }
 
+/*
+terraform {
+  required_providers {
+    aws = {
+      source = "hashicorp/aws"
+      version = "~> 4.0"
+    }
+  }
+
+  backend "s3" {
+    bucket = "<INSERT BUCKET NAME>"
+    key = "terraform/terraform.tfstate"
+    region = "us-east-1"
+    dynamodb_table = "<INSERT TABLE NAME>"
+    encrypt = true
+  }
+}
+*/
+
 provider "aws" {
   alias  = "default"
   region = "us-east-1"
@@ -94,3 +113,11 @@ resource "aws_s3_bucket_acl" "bucket_acl" {
     }
   }
 }
+
+/*
+resource "null_resource" "s3_upload" {
+  provisioner "local-exec" {
+    command = "./upload.sh ${aws_s3_bucket.bucket.id}"
+  }
+}
+*
